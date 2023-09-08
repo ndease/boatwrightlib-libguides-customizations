@@ -1,0 +1,161 @@
+<style>
+:root{
+	font-size:1rem;
+}
+
+h1,h2,h3,h4,h5{
+	font-family: "Domaine Display Narrow", "Times New Roman", Times, serif;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: normal;
+
+}
+
+body{
+	background-color:#f3f2f2;
+	color:#262525;
+	font-family: "Gotham Narrow SSm A","Gotham Narrow SSm B",Tahoma,sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size:1rem;
+}
+
+p{
+	margin-bottom: 1rem;
+	line-height:1.5;
+}
+
+a {
+    font-weight: bold;
+    border-bottom: 1px solid #900;
+    word-wrap: break-word;
+    transition: 0.2s all ease;
+    color:rgb(38, 37, 37);
+}
+
+a:hover, a:focus, a:visited:hover {
+    border-bottom: 1px solid transparent;
+}
+
+a:hover, a:focus {
+    color: #900;
+}
+
+/*#s-lg-guide-header-info h1, .s-lib-header h1{
+	font-size: calc(2.5rem + (2.875 - 2.5) * ((100vw - 20rem) / (64 - 20)));
+}*/
+
+.s-lib-box .s-lib-box-title {
+	background-color:transparent;
+	font-size: calc(2rem + (2.25 - 2) * ((100vw - 20rem) / (64 - 20))) !important;
+	color:#262525;
+	border-bottom: 0;
+}
+
+.s-lib-box{
+	border:0;
+	box-shadow:none;
+	background-color:transparent;
+}
+
+ul.nav.nav-pills.nav-stacked.split-button-nav {
+    border: 1px solid #bab6b5;
+}
+
+ul.nav.nav-pills.nav-stacked.split-button-nav {
+    border-left-width: 4px;
+    border-left-color: #bab6b5;
+    border-left-style: solid;
+}
+
+#s-lg-tabs-container .nav-tabs > li > a, #s-lg-tabs-container .nav-tabs > li > button, #s-lg-tabs-container .nav-pills > li > a, #s-lg-tabs-container .nav-pills > li > button {
+    border-radius:0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    background: #fff;
+    color:inherit;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+#s-lg-tabs-container .nav-tabs > li:not(:last-child) > a, #s-lg-tabs-container .nav-tabs > li:not(:last-child) > button, #s-lg-tabs-container .nav-pills > li:not(:last-child) > a, #s-lg-tabs-container .nav-pills > li:not(:last-child) > button {
+    border-bottom: 1px solid #bab6b5;
+}
+
+#s-lg-tabs-container .nav-tabs > .active > a, #s-lg-tabs-container .nav-tabs > .active > button, #s-lg-tabs-container .nav-pills > .active > a, #s-lg-tabs-container .nav-pills > .active > button {
+    color: #ffffff;
+    cursor: default;
+    background-color: #093b78;
+    border: 1px solid transparent;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border-bottom-color: transparent;
+    font-weight: normal;
+}
+
+#s-lg-tabs-container .nav-tabs > li > a:hover, #s-lg-tabs-container .nav-tabs > li > button:hover, #s-lg-tabs-container .nav-pills > li > a:hover, #s-lg-tabs-container .nav-pills > li > button:hover {
+    border: 1px solid transparent;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    background-color: #d2d0cf !important;
+    color: #900;
+}
+
+#s-lg-tabs-container .nav-tabs > .active:hover > a, #s-lg-tabs-container .nav-tabs > .active > button:hover, #s-lg-tabs-container .nav-pills > .active > a:hover, #s-lg-tabs-container .nav-pills > .active > button:hover {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border-bottom-color: transparent;
+    background-color: #d60000 !important;
+    font-weight: normal;
+}
+
+.nav-stacked>li+li {
+    margin-top: 0;
+    margin-left: 0;
+}
+
+#s-lg-tabs-container .nav-tabs > .active > a, #s-lg-tabs-container .nav-tabs > .active > button, #s-lg-tabs-container .nav-pills > .active > a, #s-lg-tabs-container .nav-pills > .active > button {
+background:#900;
+color:#fff;
+}
+
+.s-lib-profile-container{
+	background:#dedddc;
+	border-bottom-right-radius: 50px;
+	padding:20px;
+
+}
+
+.s-lib-profile-email a{
+	width:100%;
+	display:block;
+	border:0;
+	border-radius:0;
+	color: #fff !important;
+    background-color: #900;
+    text-transform: uppercase;
+
+}
+.s-lib-profile-email a:focus, .s-lib-profile-email a:hover{
+ background-color: #d60000;
+}
+
+.label-info[href]:hover{
+background-color: #d60000;
+border:0;
+}
+
+.s-lib-profile-widget button{
+	width:100%;
+	display:block;
+	border:0;
+	border-radius:0;
+	color: #fff !important;
+    background-color: #900 !important;
+    text-transform: uppercase;
+
+}
+</style>
