@@ -13,7 +13,7 @@ function handleTabletChange(e) {
     console.log('Media Query Matched!')
     mainColumn.append(profileBox);
   } else {
-
+  	navTabs.append(profileBox);
   }
 }
 
