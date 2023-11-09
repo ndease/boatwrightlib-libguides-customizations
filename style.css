@@ -2,6 +2,24 @@
 	font-size:1rem;
 }
 
+@media (min-width: 768px) {
+    .container {
+        width:750px
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width:970px
+    }
+}
+
+@media (min-width: 1480px) {
+    .container {
+        width:1400px
+    }
+}
+
 h1,h2,h3,h4,h5{
 	font-family: "Domaine Display Narrow", "Times New Roman", Times, serif;
     font-style: normal;
@@ -24,6 +42,7 @@ p{
 	line-height:1.5;
 }
 
+
 a {
     font-weight: bold;
     border-bottom: 1px solid #900;
@@ -33,11 +52,16 @@ a {
 }
 
 a:hover, a:focus, a:visited:hover {
-    border-bottom: 1px solid transparent;
+    border-bottom: 0px solid transparent;
+    text-decoration: none;
 }
 
 a:hover, a:focus {
     color: #900;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    outline: none;
 }
 
 /*#s-lg-guide-header-info h1, .s-lib-header h1{
