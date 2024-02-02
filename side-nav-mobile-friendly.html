@@ -81,6 +81,13 @@ a:hover, a:focus {
     outline: none;
 }
 
+a.s-lg-label-more{
+border-bottom:0px;
+}
+
+#s-lib-scroll-top > a{
+    border-bottom:0px;
+}
 /*#s-lg-guide-header-info h1, .s-lib-header h1{
     font-size: calc(2.5rem + (2.875 - 2.5) * ((100vw - 20rem) / (64 - 20)));
 }*/
@@ -242,6 +249,35 @@ border-bottom: none;
 #university-logo-hm a {
     border-bottom:0;
 }*/
+
+footer {
+    background: #262525;
+    color: #BAB6B5;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.s-lib-footer{
+
+    background: #262525;
+    color: #BAB6B5;
+    border-bottom: 1px solid #bab6b5;
+    border-top:0px;
+
+}
+
+span.s-lg-text-greyout {
+    color: #BAB6B5;
+}
+
+#s-lib-footer-login-link a, #s-lib-footer-support-link a {
+    color:#BAB6B5;
+}
+
+footer a{
+    color:#BAB6B5;
+    border-bottom: 0px;
+}
 </style>
 <!--<div class="logo-container-hm large-3 cell">
             <a href="https://www.richmond.edu" id="university-logo-hm" aria-label="University of Richmond">
@@ -311,6 +347,7 @@ border-bottom: none;
         </div>
     </div>
 </div>
+<footer>
 <!-- BEGIN: Page Footer -->
 <div id="s-lib-footer-public"
      class="s-lib-footer footer container s-lib-side-borders">
@@ -353,8 +390,9 @@ border-bottom: none;
 <!-- !scroll_top.twig -->
 <div id="s-lib-alert" title=""><div id="s-lib-alert-content"></div></div>
                 <!-- BEGIN: Custom Footer -->
-                {{public_footer}}
+              <!--  {{public_footer}} -->
         <!-- END: Custom Footer -->
+    </footer>
 <script>
 //short script to set the middle column to full width in the situation that a side-nav libguides template with three columns has an empty third column.
 
