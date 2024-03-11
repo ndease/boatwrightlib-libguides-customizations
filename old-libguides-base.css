@@ -1,0 +1,79 @@
+<style>
+.urheader {
+  margin: auto;
+  width: 1170px;
+}
+
+.urheader a{
+color: #900;
+font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+}
+
+@media screen and (min-width: 601px) {
+  div.urheader a {
+    font-size:40px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  div.urheader a {
+    font-size: 30px;
+  }
+}
+
+/*Fix icon height on A-Z page so it inherits the height of the image*/
+.s-lg-icon {
+   max-width:inherit;
+}
+
+#s-lib-bc {
+background: linear-gradient(
+90deg, #093B78 30%, rgba(255,255,255,0.85) 100%);
+}
+
+#s-lib-admin-bc .breadcrumb, #s-lib-bc .breadcrumb a{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#s-lib-admin-bc .breadcrumb>.active, #s-lib-bc .breadcrumb>.active {
+color: #fff;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* hide button to show more profiles since profile landing page shows everyone, not just librarians */
+#col2 > div:nth-child(3) .s-lg-hp-btn-section {
+        display: none; 
+    }
+
+</style>
+
+
+<script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("s-lg-tabs-container");
+
+// Get the offset position of the navbar
+var sticky = s-lg-tabs-container.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    s-lg-tabs-container.classList.add("sticky")
+  } else {
+    s-lg-tabs-container.classList.remove("sticky");
+  }
+}
+</script>
+
