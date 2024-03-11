@@ -269,6 +269,18 @@ footer {
     background-color: #dedddc;
 }
 
+#s-lib-bc-page{
+    color:white !important;
+}
+
+#s-lib-bc-site > a{
+    color:white !important;
+}
+
+#s-lib-bc-customer > a{
+    color:white !important;
+}
+
 /* end new a-z changes */
 
 .s-lib-footer{
