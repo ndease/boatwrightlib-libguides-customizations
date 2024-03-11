@@ -1,0 +1,362 @@
+<style>
+
+/*GLOBAL* - Review before move to BS5*/
+a:hover {
+  text-decoration:underline;
+}
+
+ul {
+  margin-bottom: 0.5rem;
+}
+
+/*GLOBAL A-Z MARGIN STYLES*/
+.mt-3 {
+  margin-top: 0.5rem!important;
+}
+
+.mb-3 {
+  margin-bottom:0.5rem!important;
+}
+
+.mt-4 {
+  margin-top: 1rem!important;
+}
+
+.mb-4 {
+  margin-bottom: 1rem!important;
+}
+
+/*HEADER AND BREADCRUMBS*/
+/*Change the BML logo*/
+#bml {
+  color:#900; 
+  font-family: 'Domaine Display Narrow', 'Times New Roman', Times, serif; 
+  font-size:42px;
+}
+
+#bml-home:hover {
+   color:#900;
+}
+
+/*Change the breadcrumbs*/
+#s-lib-admin-bc .breadcrumb, #s-lib-bc .breadcrumb {
+ background: linear-gradient(90deg, #093b78 30%, rgba(255,255,255,0.85) 100%);
+ padding: 0.1rem 0.1rem 0.1rem 0.5rem;
+}
+
+.breadcrumb-item a, .breadcrumb-item a:visited {
+  color: white;
+  text-decoration:underline;
+}
+
+#s-lib-bc-page {
+  color: white !important;
+}
+
+/*Change the breadcrumb dividers*/
+.breadcrumb-item+.breadcrumb-item::before {
+    color:white;
+    content:'>'
+}
+
+/*Fix spacing below header*/
+#s-lib-public-header {
+  margin-top: 1rem;
+}
+
+/*TITLE AREA*/
+/*Change font size of title*/
+#s-lib-public-header-title {
+  font-size:26px;
+}
+
+/*Fix spacing above the search box*/
+#s-lg-az-search-bar {
+  margin-top:0px;
+  margin-bottom:0px;
+}
+
+.s-lib-main {
+ padding-top:0px;
+}
+
+/*Fix spacing at the below page name*/
+#s-lib-public-header {
+  margin-bottom:0.5rem;
+}
+
+#s-lib-public-header-title {
+  margin-bottom:0px;
+}
+
+/*SEARCH BOX AND ALPHA MENU AREA*/
+
+/*Change background color of search box*/
+#az-search-col-1>nav {
+  background-color: #093b78;
+}
+
+#s-lg-az-filter-cols .btn-primary:hover {
+  background-color: #3f66d9
+}
+
+/*Change background color of Clear Filters box*/
+.s-lg-az-reset {
+    background-color:white;
+}
+
+.s-lg-az-reset:hover {
+    background-color: #f2f2f2;    
+}
+
+/*Remove blue border around the dropdown menus*/
+#s-lg-az-filter-cols .form-control:focus, #s-lg-az-filter-cols .select2-container--focus {
+  box-shadow: none;
+}
+
+/*Fix vertical alignment of dropdown menus*/
+.select2-container--bootstrap5 .select2-search.select2-search--inline .select2-search__field {
+  line-height: 2.3;
+}
+
+.select2-container--bootstrap5 .select2-selection--multiple:not(.form-select-sm):not(.form-select-lg) .select2-search__field {
+  height: 25px;
+}
+
+/*Hide the placeholder upon click for dropdown menus*/
+textarea.select2-search__field:focus::-webkit-input-placeholder, input.s-lg-az-search.form-control:focus::-webkit-input-placeholder {
+  color : transparent;
+}
+textarea.select2-search__field:focus::-moz-placeholder, input.s-lg-az-search.form-control:focus::-moz-placeholder {
+  color : transparent;
+}
+textarea.select2-search__field:-moz-placeholder, input.s-lg-az-search.form-control:-moz-placeholder {
+  color : transparent;
+}
+textarea.select2-search__field:focus::-webkit-input-placeholder, input.s-lg-az-search.form-control:focus::-webkit-input-placeholder {
+  opacity : 0;
+}
+textarea.select2-search__field:focus::-moz-placeholder, input.s-lg-az-search.form-control:focus::-moz-placeholder {
+  opacity : 0;
+}
+textarea.select2-search__field:-moz-placeholder, input.s-lg-az-search.form-control:-moz-placeholder {
+  opacity : 0;
+}
+
+/*Add animated carets to the dropdown menus*/
+.select2 .select2-selection::after {
+content: "";
+border-top: 0;
+border-right: 0.3em solid transparent;
+border-bottom: 0.3em solid;
+border-left: 0.3em solid transparent;
+display: inline-flex;
+position: absolute;
+top: 50%;
+right: .5rem;
+-o-transition: all .3s linear;
+-moz-transition: all .3s linear;
+-webkit-transition: all .3s linear;
+transition: all .3s linear;
+-o-transform: rotate(180deg) translateY(0.15rem);
+-ms-transform: rotate(180deg) translateY(0.15rem);
+-moz-transform: rotate(180deg) translateY(0.15rem);
+-webkit-transform: rotate(180deg) translateY(0.15rem);
+transform: rotate(180deg) translateY(0.15rem)
+}
+.select2-container--open .select2-selection::after {
+-o-transition: all .3s linear;
+-moz-transition: all .3s linear;
+-webkit-transition: all .3s linear;
+transition: all .3s linear;
+-ms-transform: translateY(-0.15rem);
+-o-transform: translateY(-0.15rem);
+-moz-transform: translateY(-0.15rem);
+-webkit-transform: translateY(-0.15rem);
+transform: translateY(-0.15rem);
+}
+
+/*Add background color to dropdown menu selections*/
+span.select2-selection__choice__display {
+  background-color:#bfccf2;
+  padding:0.3rem;
+  border-radius:0.3rem;
+}
+
+/*Remove comma between dropdown menu selections*/
+#az-public-mobile-filters .select2-selection__choice:nth-last-child(n+2):after, #s-lg-az-filters .select2-selection__choice:nth-last-child(n+2):after {
+  content: ' ';
+}
+
+/*Align selections to baseline*/
+.select2-container--bootstrap5 .select2-selection--multiple .select2-selection__rendered .select2-selection__choice {
+   align-items: baseline;
+}
+
+/*Activate the x button to delete selection*/
+#az-public-mobile-filters .select2-selection__choice__remove, #s-lg-az-filters .select2-selection__choice__remove {
+    display:block !important;
+}
+
+#s-lg-az-filters .select2-selection__choice {
+    background-color:#bfccf2 !important;
+    padding-right:0.5rem;
+    margin-right:0.5rem;
+}
+
+li.select2-selection__choice {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+span.select2-selection__choice__display {
+    margin-right:0.6rem;
+}
+
+.select2-container--bootstrap5 .select2-selection--multiple .select2-selection__rendered .select2-selection__choice .select2-selection__choice__remove {
+    mask-size:0.5rem;
+}
+
+/*Change color of recommended databases link*/
+.recommended-list {
+  color: white;
+}
+
+a.recommended-list:hover, a.recommended-list:visited {
+  color:white;
+}
+
+/*Fix padding below the search box*/
+#s-lg-az-filters {
+  padding-bottom: 1.375rem;
+}
+
+/*Eliminate search box padding*/
+#s-lg-az-filter-cols div.row {
+  padding-top:0px;
+  padding-bottom:0px;
+}
+
+/*Change color of alphabet menu at top*/
+#s-lg-az-index button {
+   color: #2954d1;
+}
+
+/*Change color of alphabet menu at top on hover*/
+#s-lg-az-index button:hover {
+  color: #23527c;
+  text-decoration: underline;
+}
+
+/*RIGHT BOXES and MENUS*/
+
+/*Adjust spacing and background colors of Featured box*/
+#s-lg-az-popular {
+  padding: 0;
+  border-radius: 0.462rem;
+}
+
+#s-lg-az-popular h4 {
+  padding: 1.3rem;
+  background-color: #bfccf2;
+  margin-bottom:0rem;
+  border-top-left-radius: 0.482rem;
+  border-top-right-radius: 0.482rem;
+}
+
+#s-lg-az-popular div.mb-4 {
+  padding: 1.3rem;
+  background-color: #eaeefb;
+  border-bottom-right-radius: 0.482rem;
+  border-bottom-left-radius: 0.482rem;
+}
+
+/*Adjust spacing and background colors of Trials box*/
+#s-lg-az-trials {
+  padding: 0;
+  background-color: #eaeefb;
+}
+
+#s-lg-az-trials h4 {
+  padding: 1.3rem;
+  background-color: #bfccf2;
+  border-top-left-radius: 0.482rem;
+  border-top-right-radius: 0.482rem;
+}
+
+#s-lg-az-trials div.mb-4 {
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
+  padding-bottom: 1.3rem;
+  background-color: #eaeefb;
+  border-bottom-right-radius: 0.482rem;
+  border-bottom-left-radius: 0.482rem;
+}
+
+#s-lg-az-trials>p {
+   margin-bottom: 1.3rem;
+   padding-left: 1.3rem;
+   padding-right: 1.3rem;
+   background-color: #eaeefb;
+}
+
+/*Hide icons*/
+#s-lg-az-trials .mb-4 .az-icons, #s-lg-az-popular .mb-4 .az-icons {
+  display:none;
+}
+
+#s-lg-az-trials .mb-4 i,span.sr-only, #s-lg-az-popular .mb-4 i,span.sr-only {
+  display:none;
+}
+
+/*DATABASE LIST*/
+
+/*Fix icon size next to database names*/
+.s-lg-icon {
+  max-height: 16px;
+  max-width: inherit;
+}
+
+/*Fix icon spacing*/
+.az-icons ul li {
+  margin-right:0.5rem;
+}
+
+.az-icons {
+  margin-left:0.5rem;
+}
+
+/*Fix flags spacing*/
+.az-flags {
+  margin-left:0.5rem;
+}
+
+/*Remove extra spacing at bottom of each database entry*/
+.az-description-full p {
+  margin-bottom: 0;
+}
+
+/*Bold the Alternate Name text*/
+.az-configured-fields-label {
+  font-weight:bold;
+}
+
+/*Change padding for Database Alert*/
+.az-landing-page-alert.p-3 {
+  padding: 0.5rem!important;
+}
+
+/*Modify Best Bets box*/
+#best-bets-box {
+  background-color: #fff8dd;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+/*Shrink margin above pagination*/
+#s-lg-az-pager {
+  margin-top:0.75rem;
+}
+
+</style>
