@@ -208,11 +208,11 @@ border:0;
     background:transparent;
 }
 
-#s-lib-bc a {
+header a {
     border-bottom:none;
 }
 
-#s-lg-guide-header{
+header {
     background: linear-gradient( 90deg, #093B78 30%, rgba(255,255,255,0.85) 100%);
     border-bottom: 30px solid #900;
     box-shadow: 0 5px 5px 0 rgba(0,0,0,0.4);
@@ -255,11 +255,27 @@ footer {
     padding-bottom: 50px;
 }
 
+/*new a-z changes */
+
+.az-item h4 a{
+    font-size:1.6em;
+}
+
+.az-item h4 a:visited{
+    color:rgb(38, 37, 37);
+}
+
+#az-search-col-1>nav {
+    background-color: #dedddc;
+}
+
+/* end new a-z changes */
+
 .s-lib-footer{
 
     background: #262525;
     color: #BAB6B5;
-    border-bottom: 1px solid #bab6b5;
+    border-bottom: 1px solid #bab6b5;ß
     border-top:0px;
 
 }
@@ -280,4 +296,5 @@ footer a{
 div#s-lg-guide-header-info {
     margin-bottom: 20px;
 }
+
 </style>
