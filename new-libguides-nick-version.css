@@ -257,10 +257,13 @@ footer {
 
 /*new a-z changes */
 
-.az-item h4 a{
+/*.az-item h4 a{
     font-size:1.6em;
-}
+}*/
 
+h4{
+    font-size: 1.4rem;
+}
 .az-item h4 a:visited{
     color:rgb(38, 37, 37);
 }
@@ -279,6 +282,67 @@ footer {
 
 #s-lib-bc-customer > a{
     color:white !important;
+}
+
+.urheader a{
+color: #900;
+font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+}
+
+@media screen and (min-width: 601px) {
+  div.urheader a {
+    font-size:40px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  div.urheader a {
+    font-size: 30px;
+  }
+}
+
+#s-lg-az-popular, #s-lg-az-trials {
+    background-color: #dedddc;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.az-configured-fields-label {
+    color: #262525;
+}
+
+.az-configured-fields-value {
+    color: #262525;
+}
+
+#s-lg-az-popular .az-description, #s-lg-az-popular .az-description-full, #s-lg-az-trials .az-description, #s-lg-az-trials .az-description-full {
+    color: #262525;
+}
+
+.select2-container--bootstrap5 .select2-dropdown .select2-results__option.select2-results__option--highlighted {
+    background-color: #dedddc;
+    color: #262525;
+    transition: color .2s ease;
+}
+
+#s-lib-public-header-title {
+     margin-bottom: 0; 
+}
+
+#s-lib-public-header-desc{
+display:none;
+}
+
+#s-lib-footer-public{
+    width:100%;
+}
+
+.s-lg-az-result-badge-new {
+    background-color: #990000;
 }
 
 /* end new a-z changes */
