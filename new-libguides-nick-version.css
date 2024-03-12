@@ -352,6 +352,12 @@ display:none;
 a#az-mobile-filter-edit {
     border-bottom: 0;
 }
+
+@media(max-width:500px){
+    #s-lib-bc{
+    display:none;
+}
+}
 /* end new a-z changes */
 
 .s-lib-footer{
