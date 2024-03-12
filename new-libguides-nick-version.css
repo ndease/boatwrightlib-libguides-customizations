@@ -345,6 +345,13 @@ display:none;
     background-color: #990000;
 }
 
+.az-filter-chip>a{
+    border-bottom:0;
+}
+
+a#az-mobile-filter-edit {
+    border-bottom: 0;
+}
 /* end new a-z changes */
 
 .s-lib-footer{
