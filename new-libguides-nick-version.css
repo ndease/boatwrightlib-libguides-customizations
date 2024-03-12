@@ -358,6 +358,12 @@ a#az-mobile-filter-edit {
     display:none;
 }
 }
+
+.select2-container--bootstrap5 .select2-dropdown .select2-results__option.select2-results__option--selected {
+    background-color: #dedddc;
+    color: #262525;
+}
+
 /* end new a-z changes */
 
 .s-lib-footer{
