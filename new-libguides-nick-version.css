@@ -388,8 +388,106 @@ footer a{
     border-bottom: 0px;
 }
 
+a:visited {
+color: rgb(38, 37, 37);
+}
+
 div#s-lg-guide-header-info {
     margin-bottom: 20px;
 }
+
+/* custom subject pills */
+
+#az-public-mobile-filters .select2-selection__choice__remove, #s-lg-az-filters .select2-selection__choice__remove {
+    display: block !important;
+    background-color: rgb(85, 85, 85);
+opacity: 100;
+}
+
+#az-public-mobile-filters .select2-selection__choice, #s-lg-az-filters .select2-selection__choice {
+    background: lightgray !important;
+    padding-left: .5em;
+padding-right: .5em;
+padding-top: .2em;
+padding-bottom: .2em;
+}
+.select2-container--bootstrap5 .select2-selection--multiple:not(.form-select-sm):not(.form-select-lg) .select2-selection__choice .select2-selection__choice__display {
+margin-left: 1rem;
+}
+
+/*Hide the placeholder upon click for dropdown menus*/
+textarea.select2-search__field:focus::-webkit-input-placeholder, input.s-lg-az-search.form-control:focus::-webkit-input-placeholder {
+    color : transparent;
+}
+textarea.select2-search__field:focus::-moz-placeholder, input.s-lg-az-search.form-control:focus::-moz-placeholder {
+    color : transparent;
+}
+textarea.select2-search__field:-moz-placeholder, input.s-lg-az-search.form-control:-moz-placeholder {
+    color : transparent;
+}
+textarea.select2-search__field:focus::-webkit-input-placeholder, input.s-lg-az-search.form-control:focus::-webkit-input-placeholder {
+    opacity : 0;
+}
+textarea.select2-search__field:focus::-moz-placeholder, input.s-lg-az-search.form-control:focus::-moz-placeholder {
+    opacity : 0;
+}
+textarea.select2-search__field:-moz-placeholder, input.s-lg-az-search.form-control:-moz-placeholder {
+    opacity : 0;
+}
+
+/*Add animated carets to the dropdown menus*/
+.select2 .select2-selection::after {
+content: "";
+border-top: 0;
+border-right: 0.3em solid transparent;
+border-bottom: 0.3em solid;
+border-left: 0.3em solid transparent;
+display: inline-flex;
+position: absolute;
+top: 50%;
+right: .5rem;
+-o-transition: all .3s linear;
+-moz-transition: all .3s linear;
+-webkit-transition: all .3s linear;
+transition: all .3s linear;
+-o-transform: rotate(180deg) translateY(0.15rem);
+-ms-transform: rotate(180deg) translateY(0.15rem);
+-moz-transform: rotate(180deg) translateY(0.15rem);
+-webkit-transform: rotate(180deg) translateY(0.15rem);
+transform: rotate(180deg) translateY(0.15rem)
+}
+.select2-container--open .select2-selection::after {
+-o-transition: all .3s linear;
+-moz-transition: all .3s linear;
+-webkit-transition: all .3s linear;
+transition: all .3s linear;
+-ms-transform: translateY(-0.15rem);
+-o-transform: translateY(-0.15rem);
+-moz-transform: translateY(-0.15rem);
+-webkit-transform: translateY(-0.15rem);
+transform: translateY(-0.15rem);
+}
+
+
+.fa.fa-angle-down.me-2.fs-4 {
+display: none;
+}
+
+#s-lg-az-index button {
+text-decoration: none;
+color: #2074a2;
+font-weight: 600;
+padding: 0 5px;
+margin-right: 2px;
+border: transparent;
+border-radius: 4px;
+background-color: transparent;
+}
+
+#s-lg-az-index button[disabled=disabled] {
+background-color: transparent;
+border: transparent;
+}
+
 
 </style>
