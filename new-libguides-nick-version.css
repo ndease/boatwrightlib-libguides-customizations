@@ -285,7 +285,7 @@ h4{
 }
 
 .urheader a{
-color: #900;
+color: #900 !important;
 font-weight: bold;
   font-family: "Times New Roman", Times, serif;
 }
@@ -487,6 +487,10 @@ background-color: transparent;
 #s-lg-az-index button[disabled=disabled] {
 background-color: transparent;
 border: transparent;
+}
+
+.az-landing-back-link{
+    border-bottom:0;
 }
 
 
