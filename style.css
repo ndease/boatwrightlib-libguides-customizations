@@ -1,5 +1,61 @@
+<style>
+.urheader {
+  margin: auto;
+  width: 1170px;
+}
+
+.urheader a{
+color: #900;
+font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+}
+
+@media screen and (min-width: 601px) {
+  div.urheader a {
+    font-size:40px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  div.urheader a {
+    font-size: 30px;
+  }
+}
+
+/*Fix icon height on A-Z page so it inherits the height of the image*/
+.s-lg-icon {
+   max-width:inherit;
+}
+
+#s-lib-bc {
+background: linear-gradient(
+90deg, #093B78 30%, rgba(255,255,255,0.85) 100%);
+}
+
+#s-lib-admin-bc .breadcrumb, #s-lib-bc .breadcrumb a{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#s-lib-admin-bc .breadcrumb>.active, #s-lib-bc .breadcrumb>.active {
+color: #fff;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* hide button to show more profiles since profile landing page shows everyone, not just librarians */
+#col2 > div:nth-child(3) .s-lg-hp-btn-section {
+        display: none; 
+    }
+
 :root{
-	font-size:1rem;
+    font-size:1rem;
 }
 
 @media (min-width: 768px) {
@@ -20,26 +76,45 @@
     }
 }
 
+@media(max-width:500px){
+    #s-lib-bc{
+    display:none;
+}
+}
+
 h1,h2,h3,h4,h5{
-	font-family: "Domaine Display Narrow", "Times New Roman", Times, serif;
+    font-family: "Domaine Display Narrow", "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 700;
     letter-spacing: normal;
 
 }
 
+#s-lg-guide-header-info h1, .s-lib-header h1{
+    font-size: calc(2.5rem + (2.875 - 2.5) * ((100vw - 20rem) / (64 - 20)));
+}
+
+div#s-lg-guide-header-info {
+    padding: 6px 8px;
+}
+
+#s-lib-admin-bc .breadcrumb, #s-lib-bc .breadcrumb {
+    margin: 0.2rem 0 0.2rem 0;
+}
 body{
-	background-color:#f3f2f2;
-	color:#262525;
-	font-family: "Gotham Narrow SSm A","Gotham Narrow SSm B",Tahoma,sans-serif;
+    background-color:#f3f2f2;
+    color:#262525;
+    font-family: "Gotham Narrow SSm A","Gotham Narrow SSm B",Tahoma,sans-serif;
     font-weight: 400;
     line-height: 1.5;
     font-size:1rem;
+    margin:0;
+    padding:0;
 }
 
 p{
-	margin-bottom: 1rem;
-	line-height:1.5;
+    margin-bottom: 1rem;
+    line-height:1.5;
 }
 
 
@@ -64,21 +139,28 @@ a:hover, a:focus {
     outline: none;
 }
 
+a.s-lg-label-more{
+border-bottom:0px;
+}
+
+#s-lib-scroll-top > a{
+    border-bottom:0px;
+}
 /*#s-lg-guide-header-info h1, .s-lib-header h1{
-	font-size: calc(2.5rem + (2.875 - 2.5) * ((100vw - 20rem) / (64 - 20)));
+    font-size: calc(2.5rem + (2.875 - 2.5) * ((100vw - 20rem) / (64 - 20)));
 }*/
 
 .s-lib-box .s-lib-box-title {
-	background-color:transparent;
-	font-size: calc(2rem + (2.25 - 2) * ((100vw - 20rem) / (64 - 20))) !important;
-	color:#262525;
-	border-bottom: 0;
+    background-color:transparent;
+    font-size: calc(2rem + (2.25 - 2) * ((100vw - 20rem) / (64 - 20))) !important;
+    color:#262525;
+    border-bottom: 0;
 }
 
 .s-lib-box{
-	border:0;
-	box-shadow:none;
-	background-color:transparent;
+    border:0;
+    box-shadow:none;
+    background-color:transparent;
 }
 
 ul.nav.nav-pills.nav-stacked.split-button-nav {
@@ -146,18 +228,18 @@ color:#fff;
 }
 
 .s-lib-profile-container{
-	background:#dedddc;
-	border-bottom-right-radius: 50px;
-	padding:20px;
+    background:#dedddc;
+    border-bottom-right-radius: 50px;
+    padding:20px;
 
 }
 
 .s-lib-profile-email a{
-	width:100%;
-	display:block;
-	border:0;
-	border-radius:0;
-	color: #fff !important;
+    width:100%;
+    display:block;
+    border:0;
+    border-radius:0;
+    color: #fff !important;
     background-color: #900;
     text-transform: uppercase;
 
@@ -172,12 +254,163 @@ border:0;
 }
 
 .s-lib-profile-widget button{
-	width:100%;
-	display:block;
-	border:0;
-	border-radius:0;
-	color: #fff !important;
+    width:100%;
+    display:block;
+    border:0;
+    border-radius:0;
+    color: #fff !important;
     background-color: #900 !important;
     text-transform: uppercase;
 
 }
+
+#s-lib-bc{
+    background:transparent;
+}
+
+#s-lib-bc a {
+    border-bottom:none;
+}
+#s-lg-guide-header{
+margin:0;
+width:100%;
+}
+#s-lg-guide-header{
+    background: linear-gradient( 90deg, #093B78 30%, rgba(255,255,255,0.85) 100%);
+    border-bottom: 30px solid #900;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.4);
+    margin-bottom:1.5em;
+}
+
+#s-lib-public-header{
+margin:0;
+width:100%;
+}
+
+#s-lib-public-header{
+    background: linear-gradient( 90deg, #093B78 30%, rgba(255,255,255,0.85) 100%);
+    border-bottom: 30px solid #900;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.4);
+    margin-bottom:1.5em;
+}
+
+
+/*remove scroll button*/
+#s-lib-scroll-top{
+    display:none;
+}
+
+/*ur header customizations */
+
+.urheader{
+background:white;
+padding:1em;
+width:100%;
+}
+
+.urheader a{
+border-bottom: none;
+}
+/*
+#university-logo-hm{
+    background: url(https://d2n43swdo6jzfk.cloudfront.net/dist/img/svg/shield-wordmark-inline-RGB.svg) center center no-repeat;
+    background-size: 100% 100%;
+    display: block;
+    width:300px;
+    padding:2em;
+    transition: 0.2s all ease;
+}
+
+#university-logo-hm a {
+    border-bottom:0;
+}*/
+
+footer {
+    background: #262525;
+    color: #BAB6B5;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.s-lib-footer{
+
+    background: #262525;
+    color: #BAB6B5;
+    border-bottom: 1px solid #bab6b5;
+    border-top:0px;
+
+}
+
+span.s-lg-text-greyout {
+    color: #BAB6B5;
+}
+
+#s-lib-footer-login-link a, #s-lib-footer-support-link a {
+    color:#BAB6B5 !important;
+}
+
+footer a{
+    color:#BAB6B5;
+    border-bottom: 0px;
+}
+
+div#s-lg-guide-header-info {
+    margin-bottom: 20px;
+}
+
+/*accordion style for heather/kyle */
+
+div.panel > div.panel-heading {
+    background: rgb(222, 221, 220) !important;
+    border: 0 !important;
+}
+
+.panel.panel-default {
+    background: transparent;
+    border: 0;
+}
+
+/*fix side tabs */
+
+.s-lg-tabs-side .s-lg-boxnav {
+    margin-left: 0px;
+}
+
+ul.list-group.s-lg-boxnav {
+    background: white !important;
+}
+
+.s-lg-tabs-side .s-lg-boxnav .list-group-item {
+    padding-top: 0px;
+    padding-bottom: 4px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: white;
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px solid #bab6b5;
+}
+
+.s-lg-tabs-side .s-lg-boxnav .list-group-item a {
+    border: 0;
+    text-decoration: underline;
+    font-weight: normal;
+}
+.s-lg-tabs-side .s-lg-boxnav .list-group-item:hover {
+background-color: #d2d0cf !important;
+}
+
+.s-lib-box-std .s-lib-box-title {
+background-image: none;
+}
+
+.s-lib-public-side-header > h2{
+color: black !important;
+}
+
+.s-lib-color-lt-grey {
+color: #212121;
+}
+
+
+</style>
