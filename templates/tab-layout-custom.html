@@ -1,4 +1,59 @@
 <body class="s-lg-guide-body">
+<style>
+#s-lg-tabs-container .nav-tabs > li > a, #s-lg-tabs-container .nav-tabs > li > button, #s-lg-tabs-container .nav-pills > li > a, #s-lg-tabs-container .nav-pills > li > button {
+background: #900;
+color: white;
+text-decoration: none;
+padding: .5em;
+}
+
+#s-lg-tabs-container .nav-tabs > li > a:hover, #s-lg-tabs-container .nav-tabs > li > button:hover, #s-lg-tabs-container .nav-pills > li > a:hover, #s-lg-tabs-container .nav-pills > li > button:hover {
+background: #d60000;
+}
+
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+border-radius: 0;
+border-top:0 !important;
+}
+
+#s-lg-tabs-container .nav-tabs > li > a:hover, #s-lg-tabs-container .nav-tabs > li > button:hover, #s-lg-tabs-container .nav-pills > li > a:hover, #s-lg-tabs-container .nav-pills > li > button:hover {
+border: 0;
+background-color: #d60000 !important;
+color: white;
+}
+
+#s-lg-tabs-container .nav-tabs > .active > a, #s-lg-tabs-container .nav-tabs > .active > button, #s-lg-tabs-container .nav-pills > .active > a, #s-lg-tabs-container .nav-pills > .active > button {
+color: #fff;
+background-color: #d60000;
+}
+
+#s-lg-tabs-container .nav-tabs > li:not(:last-child) > a, #s-lg-tabs-container .nav-tabs > li:not(:last-child) > button, #s-lg-tabs-container .nav-pills > li:not(:last-child) > a, #s-lg-tabs-container .nav-pills > li:not(:last-child) > button {
+border-bottom: 0;
+}
+
+#s-lg-tabs-container .nav-tabs > li > a, #s-lg-tabs-container .nav-tabs > li > button, #s-lg-tabs-container .nav-pills > li > a, #s-lg-tabs-container .nav-pills > li > button {
+border: 0;
+}
+
+#s-lg-tabs-container .nav-tabs > li > a.s-lg-tab-top-link, #s-lg-tabs-container .nav-tabs > li > a.s-lg-tab-top-link:hover, #s-lg-tabs-container .nav-tabs > li > button.s-lg-tab-top-link, #s-lg-tabs-container .nav-tabs > li > button.s-lg-tab-top-link:hover {
+border-radius: 0;
+font-weight: bold;
+padding: .5em;
+}
+
+#s-lg-tabs-container .nav-tabs > li > a.s-lg-tab-drop {
+border-radius: 0;
+padding: .5em;
+border-left: 1px solid transparent;
+}
+
+#s-lg-tabs-container .nav-tabs > li > a.s-lg-tab-drop:hover {
+border-radius: 0;
+border-left: 1px solid #bbb;
+padding: .5em;
+}
+</style>
 <link rel="stylesheet" href="https://cloud.typography.com/6507056/7202192/css/fonts.css">
 {{skip_link}}
 {{ADMIN_CMD_BAR}}
