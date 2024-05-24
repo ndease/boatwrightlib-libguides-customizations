@@ -19,19 +19,20 @@
 .urheader a{
 color: #900;
 font-weight: bold;
+font-size: font-size:calc(2rem +(2.25 - 2) *((100vw - 20rem) /(64 - 20)));
   font-family: Domaine Display Narrow, "Times New Roman", Times, serif;
 }
 
 @media screen and (min-width: 601px) {
   div.urheader a {
-    font-size:40px;
+    font-size:3rem;
   }
 }
 
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 600px) {
   div.urheader a {
-    font-size: 30px;
+    font-size: 1rem;
   }
 }
 
@@ -547,12 +548,6 @@ border-radius:0;
 border-top: 5px solid #900 !important;
 }
 
-.nav-pills>li.active>button, .nav-pills>li.active>button:focus, .nav-pills>li.active>button:hover {
-background-color: #900;
-color: #fff;
-border-radius: 0;
-}
-
 #s-lg-er-nav>ul>li, #s-lg-hp-nav>ul>li, #s-lg-profile-nav>ul>li, #s-lg-srch-nav>ul>li {
 background: rgb(222, 221, 220) !important;
 }
@@ -560,4 +555,23 @@ background: rgb(222, 221, 220) !important;
 .nav .s-lg-index-nav-btn>button {
 color: #000000;
 }
+
+#s-lg-profile-nav a{
+    border-bottom:0;
+}
+
+
+.nav-pills>li.active>button, .nav-pills>li.active>button:focus, .nav-pills>li.active>button:hover {
+background-color: #900;
+color: #fff;
+border-radius: 0;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+background-color: #900;
+color: #fff;
+border-radius: 0;
+}
+
+
 </style>
