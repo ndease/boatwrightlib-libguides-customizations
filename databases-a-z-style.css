@@ -22,6 +22,22 @@
     }
 }
 
+
+@media(max-width: 1023px){
+header{
+    border-bottom:0 !important;
+    box-shadow:none !important;
+}
+
+#s-lib-bc{
+    display:none;
+}
+
+.urheader{
+    text-align:center;
+}
+}
+
 h1,h2,h3,h4,h5{
     font-family: "Domaine Display Narrow", "Times New Roman", Times, serif;
     font-style: normal;
