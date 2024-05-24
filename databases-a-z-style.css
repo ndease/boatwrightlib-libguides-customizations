@@ -4,6 +4,16 @@
     font-size:1rem;
 }
 
+@font-face {
+  font-family: Domaine Display Narrow;
+  src: url(https://d2jv02qf7xgjwx.cloudfront.net/sites/14/include/DomaineDisplayNarrowWeb-Bold.otf);
+}
+
+@font-face {
+  font-family: Domaine Display Narrow Italic;
+  src: url(https://d2jv02qf7xgjwx.cloudfront.net/sites/14/include/DomaineDisplayNarrowWeb-BoldItalic.otf);
+}
+
 @media (min-width: 768px) {
     .container {
         width:750px
@@ -303,7 +313,7 @@ h4{
 .urheader a{
 color: #900 !important;
 font-weight: bold;
-  font-family: "Times New Roman", Times, serif;
+  font-family: Domaine Display Narrow, "Times New Roman", Times, serif;
 }
 
 @media screen and (min-width: 601px) {
