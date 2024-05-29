@@ -51,7 +51,7 @@ header{
 h1,h2,h3,h4,h5{
     font-family: "Domaine Display Narrow", "Times New Roman", Times, serif;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     letter-spacing: normal;
 
 }
@@ -85,7 +85,7 @@ p{
 
 
 a {
-    font-weight: bold;
+    font-weight: normal;
     border-bottom: 1px solid #900;
     word-wrap: break-word;
     transition: 0.2s all ease;
