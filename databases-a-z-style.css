@@ -51,7 +51,7 @@ header{
 h1,h2,h3,h4,h5{
     font-family: "Domaine Display Narrow", "Times New Roman", Times, serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 500 !important;
     letter-spacing: normal;
 
 }
@@ -313,7 +313,7 @@ h4{
 
 .urheader a{
 color: #900 !important;
-font-weight: bold;
+font-weight: normal;
 font-size: font-size:calc(2rem +(2.25 - 2) *((100vw - 20rem) /(64 - 20)));
   font-family: Domaine Display Narrow, "Times New Roman", Times, serif;
 }
