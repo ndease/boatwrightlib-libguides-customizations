@@ -21,9 +21,12 @@ color: #900;
 font-weight: bold;
 font-size: font-size:calc(2rem +(2.25 - 2) *((100vw - 20rem) /(64 - 20)));
   font-family: Domaine Display Narrow, "Times New Roman", Times, serif;
+  text-decoration: none;
 }
 
-
+.urheader a:hover{
+    text-decoration: underline;
+}
 @media print, screen and (min-width: 40em) {
     .div.urheader a {
         font-size:2.5rem
@@ -42,22 +45,103 @@ font-size: font-size:calc(2rem +(2.25 - 2) *((100vw - 20rem) /(64 - 20)));
 }
 
 
-#s-la-bc {
+#libanswers-breadcrumbs{
 background: linear-gradient(
 90deg, #093B78 30%, rgba(255,255,255,0.85) 100%);
+width: 100%;
+border-bottom: 30px solid #900;
+box-shadow: 0 5px 5px 0 rgba(0,0,0,0.4);
+margin-bottom: 1.5em;
 }
 
-#s-la-admin-bc .breadcrumb, #s-la-bc .breadcrumb a{
+#libanswers-breadcrumbs .bc a{
     color: #fff;
     text-transform: uppercase;
-}
-
-#s-la-admin-bc .breadcrumb>.active, #s-la-bc .breadcrumb>.active {
-color: #fff;
+    display:inline-block;
 }
 
 @media(max-width:500px){
-    #s-la-bc{
+    #libanswers-breadcrumbs{
+    display:none;
+}
+}
+
+#s-la-bc{
+    display:none;
+}
+.s-la-color-bars{
+    background-color:transparent;
+    background-image:none;
+}
+
+ol.bc{
+    margin-bottom:0;
+    margin:0.2rem 0 0.2rem 0;
+}
+.bc{ 
+    padding:0; 
+}
+
+.bc > li{
+    display:inline-block;
+}
+
+
+#s-lg-guide-header-info h1, .s-lib-header h1{
+    font-size: calc(2.5rem + (2.875 - 2.5) * ((100vw - 20rem) / (64 - 20)));
+}
+
+@media print, screen and (min-width: 40em) {
+    .div.urheader a {
+        font-size:2.5rem
+    }
+}
+
+@media print, screen and (min-width: 64em) {
+    div.urheader a {
+        font-size:3rem
+    }
+}
+
+
+/*ur header customizations */
+
+.urheader{
+background:white;
+padding-top:1em;
+padding-bottom:1em;
+width:100%;
+}
+
+.urheader a{
+border-bottom: none;
+}
+
+
+:root{
+    font-size:1rem;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width:750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width:90%;
+    }
+}
+
+@media (min-width: 1480px) {
+    .container {
+        width:1400px;
+    }
+}
+
+@media(max-width:500px){
+    #s-lib-bc{
     display:none;
 }
 }
@@ -69,9 +153,4 @@ h1,h2,h3,h4,h5{
     letter-spacing: normal;
 
 }
-
-#s-lg-guide-header-info h1, .s-lib-header h1{
-    font-size: calc(2.5rem + (2.875 - 2.5) * ((100vw - 20rem) / (64 - 20)));
-}
-
 </style>
