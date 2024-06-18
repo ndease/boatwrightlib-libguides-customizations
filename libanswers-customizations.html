@@ -1,0 +1,77 @@
+<link rel="stylesheet" href="https://cloud.typography.com/6507056/7202192/css/fonts.css">
+<style>
+
+@font-face {
+  font-family: Domaine Display Narrow;
+  src: url(https://d2jv02qf7xgjwx.cloudfront.net/sites/14/include/DomaineDisplayNarrowWeb-Bold.otf);
+}
+
+@font-face {
+  font-family: Domaine Display Narrow Italic;
+  src: url(https://d2jv02qf7xgjwx.cloudfront.net/sites/14/include/DomaineDisplayNarrowWeb-BoldItalic.otf);
+}
+
+.urheader {
+  margin: auto;
+  width: 1170px;
+}
+
+.urheader a{
+color: #900;
+font-weight: bold;
+font-size: font-size:calc(2rem +(2.25 - 2) *((100vw - 20rem) /(64 - 20)));
+  font-family: Domaine Display Narrow, "Times New Roman", Times, serif;
+}
+
+
+@media print, screen and (min-width: 40em) {
+    .div.urheader a {
+        font-size:2.5rem
+    }
+}
+
+@media print, screen and (min-width: 64em) {
+    div.urheader a {
+        font-size:3rem
+    }
+}
+
+/*Fix icon height on A-Z page so it inherits the height of the image*/
+.s-lg-icon {
+   max-width:inherit;
+}
+
+
+#s-la-bc {
+background: linear-gradient(
+90deg, #093B78 30%, rgba(255,255,255,0.85) 100%);
+}
+
+#s-la-admin-bc .breadcrumb, #s-la-bc .breadcrumb a{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#s-la-admin-bc .breadcrumb>.active, #s-la-bc .breadcrumb>.active {
+color: #fff;
+}
+
+@media(max-width:500px){
+    #s-la-bc{
+    display:none;
+}
+}
+
+h1,h2,h3,h4,h5{
+    font-family: "Domaine Display Narrow", "Times New Roman", Times, serif;
+    font-style: normal;
+    font-weight: 500 !important;
+    letter-spacing: normal;
+
+}
+
+#s-lg-guide-header-info h1, .s-lib-header h1{
+    font-size: calc(2.5rem + (2.875 - 2.5) * ((100vw - 20rem) / (64 - 20)));
+}
+
+</style>
