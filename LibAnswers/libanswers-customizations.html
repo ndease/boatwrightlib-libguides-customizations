@@ -11,6 +11,21 @@
   src: url(https://d2jv02qf7xgjwx.cloudfront.net/sites/14/include/DomaineDisplayNarrowWeb-BoldItalic.otf);
 }
 
+:root{
+    font-size:1rem;
+}
+
+body {
+background-color: #f3f2f2;
+color: #262525;
+font-family: "Gotham Narrow SSm A","Gotham Narrow SSm B",Tahoma,sans-serif;
+font-weight: 400;
+line-height: 1.5;
+font-size: 1rem;
+margin: 0;
+padding: 0;
+}
+
 .urheader {
   margin: auto;
   width: 1170px;
@@ -118,10 +133,6 @@ border-bottom: none;
 }
 
 
-:root{
-    font-size:1rem;
-}
-
 @media (min-width: 768px) {
     .container {
         width:750px;
@@ -153,4 +164,86 @@ h1,h2,h3,h4,h5{
     letter-spacing: normal;
 
 }
+
+.navbar.navbar-default.s-la-color-bars.s-la-color-bars-border {
+color: #333;
+border: 0;
+background-color: rgb(222, 221, 220);
+}
+
+.s-la-box-container{
+    border:0;
+}
+.s-la-box-title{
+    border:0;
+}
+
+.s-la-box-title h2{
+font-size: calc(2rem + (2.25 - 2) * ((100vw - 20rem) / (64 - 20))) !important;
+color: #262525;
+}
+
+h2 > .row {
+font-size: 1rem;
+font-family: "Gotham Narrow SSm A","Gotham Narrow SSm B",Tahoma,sans-serif;
+font-weight: 400;
+line-height: 1.5;
+}
+
+
+a {
+    font-weight: normal;
+    border-bottom: 1px solid #900;
+    word-wrap: break-word;
+    transition: 0.2s all ease;
+    color:rgb(38, 37, 37);
+    text-decoration: none !important;
+}
+
+a:hover, a:focus, a:visited:hover {
+    border-bottom: 0px solid transparent;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: #900;
+}
+
+.navbar-default .navbar-nav>li>a {
+border: 0;
+}
+
+.label > a{
+    border-bottom:0;
+}
+
+.tab-pane-content {
+background-color: white;
+padding: 1em;
+}
+
+.tab-content>.active {
+margin-top: 0;
+}
+
+.nav-tabs li.active a {
+font-weight: 700;
+border-radius: 0;
+border-top: 5px solid #900 !important;
+color: #900;
+border-left: 0;
+border-right: 0;
+}
+
+.nav-tabs>li>a {
+border-radius: 0;
+border: 0;
+background: #d2d0cf;
+border-top: 5px solid transparent;
+}
+
+.nav-tabs>li>a:hover {
+background: #e3e2e1;
+}
+
 </style>
