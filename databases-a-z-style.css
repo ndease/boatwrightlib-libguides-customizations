@@ -330,13 +330,13 @@ font-size: font-size:calc(2rem +(2.25 - 2) *((100vw - 20rem) /(64 - 20)));
     }
 }
 
-#s-lg-az-popular, #s-lg-az-trials {
+/*#s-lg-az-popular, #s-lg-az-trials {
     background-color: #dedddc;
     border-bottom-right-radius: 50px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
-}
+}*/
 
 .az-configured-fields-label {
     color: #262525;
@@ -520,5 +520,12 @@ border: transparent;
     border-bottom:0;
 }
 
+#s-lg-az-popular-body > div > p {
+display: none;
+}
+
+#s-lg-az-trials-body > div > p {
+    display:none;
+}
 
 </style>
