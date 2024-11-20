@@ -528,4 +528,14 @@ display: none;
     display:none;
 }
 
+#s-lg-az-popular .accordion-item, #s-lg-az-popular h2.accordion-header>button {
+background-color: #dedddc;
+border:0;
+}
+
+#s-lg-az-trials .accordion-item, #s-lg-az-trials h2.accordion-header>button {
+background-color: #dedddc;
+border:0;
+}
+
 </style>
