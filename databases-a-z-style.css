@@ -538,4 +538,10 @@ background-color: #dedddc;
 border:0;
 }
 
+div.az-icons > ul > li > img.s-lg-icon{
+    max-height:none;
+    max-width:none;
+    vertical-align: bottom;
+}
+
 </style>
