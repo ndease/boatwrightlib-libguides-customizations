@@ -528,6 +528,11 @@ display: none;
     display:none;
 }
 
+#s-lg-az-icon-legend-body > div > p {
+    display:none;
+}
+
+
 #s-lg-az-popular .accordion-item, #s-lg-az-popular h2.accordion-header>button {
 background-color: #dedddc;
 border:0;
@@ -536,6 +541,15 @@ border:0;
 #s-lg-az-trials .accordion-item, #s-lg-az-trials h2.accordion-header>button {
 background-color: #dedddc;
 border:0;
+}
+
+#s-lg-az-icon-legend .accordion-item, #s-lg-az-icon-legend h2.accordion-header>button {
+background-color: #dedddc;
+border:0;
+}
+
+.az-icon-legend-row {
+border-bottom: 1px dashed #b0b0b0;
 }
 
 div.az-icons > ul > li > img.s-lg-icon{
