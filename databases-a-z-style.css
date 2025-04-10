@@ -558,4 +558,8 @@ div.az-icons > ul > li > img.s-lg-icon{
     vertical-align: bottom;
 }
 
+#s-lg-az-trials-body img[title*="OneSearch"]{
+    display:none;
+}
+
 </style>
