@@ -360,10 +360,6 @@ font-size: font-size:calc(2rem +(2.25 - 2) *((100vw - 20rem) /(64 - 20)));
      margin-bottom: 0; 
 }
 
-#s-lib-public-header-desc{
-display:none;
-}
-
 #s-lib-footer-public{
     width:100%;
 }
