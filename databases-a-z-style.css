@@ -432,6 +432,12 @@ opacity: 100;
     padding:.8em;
     border-radius:30px;
 }
+
+.select2-selection__choice__remove:hover, .select2-selection__choice__remove:focus{
+    background-color:#d60000 !important;
+}
+
+
 .select2-container--bootstrap5 .select2-selection--multiple:not(.form-select-sm):not(.form-select-lg) .select2-selection__choice .select2-selection__choice__display {
 margin-left: 30px;
 }
